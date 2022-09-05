@@ -83,8 +83,8 @@
 }
 
 .dropDivid {
-  padding-top: 1px;
   padding-bottom: 1px;
+  padding-top: 1px;
 }
 
 .sectionMain {
@@ -107,10 +107,10 @@
 }
 
 .imgEpisode {
-  width: 100%;
+  position: relative;
   object-fit: cover;
   opacity: 0.5;
-  position: relative;
+  width: 100%;
 }
 
 .cardEpisode {
@@ -121,10 +121,10 @@
   content: 'In Play Now';
   position: absolute;
   font-weight: bold;
-  top: 35%;
-  left: 40%;
   display: block;
   color: white;
+  left: 40%;
+  top: 35%;
 }
 
 .changePhotoBtn {
@@ -132,11 +132,11 @@
 }
 
 .sectionPayment {
-  height: 93vh;
-  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  display: flex;
+  height: 93vh;
 }
 
 .pPayment {
@@ -144,28 +144,24 @@
 }
 
 .btnSubmitPayment {
-  width: 100%;
   background-color: #CF202C !important;
+  width: 100%;
 }
 
 input[type="file"] {
   display: none;
 }
 
-.labelInputFile {
+.placeHolderFile {
   background-color: white !important;
+  justify-content: space-between;
   color: #CF202C !important;
-  height: 50px;
-  width: 100%;
+  font-weight: bold;
   line-height: 50px;
   text-align: left;
-  padding: 0 15px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
   cursor: pointer;
-}
-
-.input-payment::-webkit-input-placeholder {
-  color:#E50914 !important;
+  padding: 0 15px;
+  display: flex;
+  height: 50px;
+  width: 100%;
 }

@@ -1,5 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import {BsPaperclip} from 'react-icons/bs'
+
 
 function BasicExample() {
   return (
@@ -17,9 +19,10 @@ function BasicExample() {
                 <Form.Control className="bg-dark text-light" type="text" placeholder="Input your account number" />
             </Form.Group>
 
-            <Form.Group className="mb-5 w-50 mx-auto" controlId="formBasicPassword">
-                <Form.Control className="fw-bold input-payment" type="text" placeholder="Attache proof of transfer" />
-            </Form.Group>
+          <Form.Group className="mb-5 w-50 mx-auto" controlId="formBasicPassword">
+            <Form.Label className="placeHolderFile rounded">Attache proof of transfer <span><BsPaperclip style={{fontSize: "25px"}}/></span></Form.Label>
+            <Form.Control type="file" placeholder="Password" />
+          </Form.Group>
 
             <div className="w-100">
                 <Button className="mb-3 w-50 mx-auto d-flex justify-content-center fw-semibold" style={{backgroundColor:"red"}} type="submit">

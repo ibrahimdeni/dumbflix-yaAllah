@@ -87,12 +87,12 @@
 
 import React from 'react'
 import {
-  FaEnvelope,
+  FaEnvelopeSquare,
   FaFemale,
   FaMale,
-  FaMapMarked,
+  FaMapMarkerAlt,
   FaPhone,
-  FaRegMoneyBillAlt,
+  FaTicketAlt,
   FaUserCircle,
 } from "react-icons/fa";
 import {Container, Row, Col, Card, Button} from 'react-bootstrap'
@@ -138,10 +138,10 @@ function Profile() {
   
 
   return (
-    <div style={{width:"100%", height:"100vh"}} className="bg-dark">
+    <div style={{width:"100%", height:"100%"}} className="bg-dark">
         <Container>
         <Row className="justify-content-center">
-        <Col md={8} className="mt-5">
+        <Col md={8} className="mt-5 mb-5">
             <Card className="rounded shadow border-0 bg-dark text-white p-5">
             <div className="d-flex justify-content-between">
                 <div className="me-5">
@@ -157,7 +157,7 @@ function Profile() {
                     </div>
                     {/* Email */}
                     <div className="d-flex mb-3 align-items-start">
-                    <FaEnvelope className="me-3 fs-1" style={{color:"red"}} />
+                    <FaEnvelopeSquare className="me-3 fs-1" style={{color:"red"}} />
                     <div>
                         <h5>{userData.email}</h5>
                         <p className="text-muted">Email Address</p>
@@ -165,7 +165,7 @@ function Profile() {
                     </div>
                     {/* Status */}
                     <div className="d-flex mb-3 align-items-start">
-                    <FaRegMoneyBillAlt className="me-3 fs-1" style={{color:"red"}}/>
+                    <FaTicketAlt className="me-3 fs-1" style={{color:"red"}}/>
                     <div>
                         <h5>{userData.status}Active</h5>
                         <p className="text-muted">Status</p>
@@ -193,7 +193,7 @@ function Profile() {
                     </div>
                     {/* Address */}
                     <div className="d-flex mb-3 align-items-start">
-                    <FaMapMarked className="me-3 fs-1" style={{color:"red"}}/>
+                    <FaMapMarkerAlt className="me-3 fs-1" style={{color:"red"}}/>
                     <div>
                         <h5>{userData.address}</h5>
                         <p className="text-muted">Address</p>

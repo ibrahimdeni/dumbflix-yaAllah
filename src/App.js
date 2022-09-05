@@ -6,7 +6,7 @@ import Movies from './pages/Movies';
 import TvShows from './pages/TvShows';
 import Profile from './pages/Profile';
 import Payment from './pages/Payment';
-// import VideoDetail from './pages/VideoDetail';
+import VideoDetail from './pages/VideoDetail';
 
 function App() {
   return (
@@ -49,14 +49,16 @@ function App() {
             <Profile />
           </Layout>
         }/>
-{/*   
-    
-  
+        
         <Route path='/video' element={
           <Layout>
             <VideoDetail />
           </Layout>
         }/>
+{/*   
+    
+  
+
   
         <Route path='/profile' element={
           <Layout>
