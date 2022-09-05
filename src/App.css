@@ -88,12 +88,13 @@
 }
 
 .sectionMain {
-  width: 65%;
+  width: 80%;
   margin: auto;
 }
 
 .cardEpisode {
-  width: 100%;
+  width: 40%;
+  margin-left:auto;
 }
 
 .pDetailMain {
